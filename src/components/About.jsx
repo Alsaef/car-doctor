@@ -1,13 +1,15 @@
 import React from 'react';
 import myImage from '../assets/images/about_us/person.jpg'
+import parts from '../assets/images/about_us/parts.jpg'
 
 const About = () => {
   return (
     <div className='my-12'>
       <div className="flex items-center justify-center px-12 gap-3">
         {/* Left side image */}
-        <div className="">
-          <img src={myImage} alt="Sample" className="rounded-2xl w-[490px] h-[473px]" />
+        <div className="relative">
+          <img src={myImage} alt="Sample" className="rounded-2xl w-[460px] h-[353px]" />
+          <img src={parts} className='w-[327px] h-[310px] absolute left-[150px] top-32' alt="" />
         </div>
 
         {/* Right side text */}
